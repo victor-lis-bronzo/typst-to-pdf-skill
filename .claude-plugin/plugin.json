@@ -1,0 +1,10 @@
+{
+  "name": "typst-to-pdf",
+  "version": "0.1.0",
+  "description": "Build polished PDFs with Typst: reports, résumés, proposals, letters, banners or anything bespoke, after a few optional questions.",
+  "author": { "name": "victor-lis-bronzo" },
+  "homepage": "https://github.com/victor-lis-bronzo/typst-to-pdf-skill",
+  "repository": "https://github.com/victor-lis-bronzo/typst-to-pdf-skill",
+  "license": "MIT",
+  "keywords": ["pdf", "typst", "document", "report", "resume", "skill"]
+}

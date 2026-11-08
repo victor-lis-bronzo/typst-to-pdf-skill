@@ -1,0 +1,5 @@
+{
+  "name": "typst-to-pdf",
+  "version": "0.1.0",
+  "description": "Build polished PDFs with Typst: reports, résumés, proposals, letters, banners or anything bespoke, after a few optional questions."
+}

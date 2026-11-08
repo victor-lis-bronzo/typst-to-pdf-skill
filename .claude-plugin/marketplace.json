@@ -1,0 +1,12 @@
+{
+  "name": "typst-to-pdf-skill",
+  "description": "Skill that builds polished PDFs with Typst from a request, notes or data.",
+  "owner": { "name": "victor-lis-bronzo" },
+  "plugins": [
+    {
+      "name": "typst-to-pdf",
+      "source": "./",
+      "description": "Build polished PDFs with Typst: reports, résumés, proposals, letters, banners or anything bespoke."
+    }
+  ]
+}
