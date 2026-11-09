@@ -6,13 +6,13 @@
 // ===== DATA ================================================================
 #let t = theme + (accent: rgb("#1d4ed8"))
 #let meta = (
-  title: "Relatório Trimestral de Operações",
-  subtitle: "Resultados do 3º trimestre de 2026",
-  author: "Equipe de Operações",
-  org: "Waywize Logística",
-  date: datetime(year: 2026, month: 10, day: 15),
+  title: "Relatório de Contribuições",
+  subtitle: "Commits e PRs em projetos open source — novembro de 2026",
+  author: "Victor Lis Bronzo",
+  org: "github.com/victor-lis-bronzo",
+  date: datetime(year: 2026, month: 11, day: 8),
   lang: "pt",
-  confidential: true,
+  confidential: false,
   toc: true,
 )
 
@@ -77,43 +77,50 @@
 #show: report.with(meta: meta, t: t)
 
 // ===== BODY ================================================================
-= Resumo executivo
+= Resumo
 
-O trimestre fechou acima da meta em volume entregue e prazo médio, com
-pressão de custo no frete de última milha. As ações de roteirização dinâmica
-reduziram o tempo médio de entrega em 11%.
+Entre 1 e 8 de novembro, o trabalho se concentrou em agentes de IA e
+ferramentas de desenvolvimento: um agente de atendimento com avaliações
+automatizadas, três skills para agentes e uma CLI para o Prisma.
 
-#kpis(("18.420", "Entregas no trimestre"), ("96,4%", "No prazo"), ("2,1 dias", "Prazo médio"), t: t)
+#kpis(("50", "Commits"), ("11", "Repositórios públicos"), ("13", "PRs mesclados"), t: t)
 
-#callout(title: "Ponto de atenção", kind: "warning", t: t)[
-  O custo por entrega na região Sul subiu 7% devido ao reajuste dos
-  parceiros terceirizados. Renegociação prevista para novembro.
+#callout(title: "Como ler os números", kind: "warning", t: t)[
+  Contagem feita pela busca de commits do GitHub (branch padrão), apenas em
+  repositórios públicos. Repositórios privados ficam de fora.
 ]
 
-= Resultados por região
+= Atividade por repositório
 
-== Volume e nível de serviço
+== Commits no período
 
 #data-table(
-  ("Região", "Entregas", "No prazo", "Custo médio"),
+  ("Repositório", "Commits", "Do que se trata"),
   (
-    ("Sudeste", "9.870", "97,2%", money(18.4)),
-    ("Sul", "4.110", "95,1%", money(22.9)),
-    ("Nordeste", "2.960", "95,8%", money(24.3)),
-    ("Centro-Oeste", "1.480", "96,0%", money(21.7)),
+    ("emporio-da-musica-agent", "23", "Agente de atendimento com avaliações"),
+    ("rws-skill", "8", "Skill de base de conhecimento"),
+    ("typst-to-pdf-skill", "4", "Skill para gerar PDFs com Typst"),
+    ("prisma-true-rollback-cli", "3", "CLI de rollback de migrations"),
+    ("legal-eagle-rag-review", "2", "RAG de documentos legais no GCP"),
+    ("langclips", "2", "Aprendizado de idiomas com clipes"),
+    ("engineering-analogy", "2", "Visualização de engenharia de software"),
+    ("clean-architecture-3d-visualizer", "2", "Clean Architecture em 3D"),
+    ("harddex-landing", "2", "Landing page do Harddex"),
+    ("n8n-nodes-social-preview", "1", "Node do n8n para imagens de preview"),
+    ("imagine-it-skill", "1", "Skill de mockups a partir de specs"),
   ),
-  columns: (2fr, 1fr, 1fr, 1fr),
+  columns: (2.2fr, 0.8fr, 2.6fr),
   t: t,
 )
 
-== Principais causas de atraso
+== Tipos de mudança
 
-+ Endereço incompleto ou divergente no pedido (38% dos casos).
-+ Ausência do destinatário na primeira tentativa (31%).
-+ Restrições de circulação em áreas centrais (17%).
++ Licenças e exemplos de saída adicionados a repositórios públicos.
++ Correções na CLI do Prisma (entrada do binário, caminho do SQLite, dry-run).
++ Novos exemplos e capturas de tela nos READMEs.
 
 = Próximos passos
 
-- Validação de endereço no checkout, com integração ao serviço de CEP.
-- Janela de entrega agendada para clientes recorrentes.
-- Revisão dos contratos de última milha na região Sul.
+- Publicar a versão 0.1.1 da CLI do Prisma no npm.
+- Atualizar a seção de projetos do LinkedIn com os trabalhos do período.
+- Revisar os repositórios que ainda não têm tópicos nem release.
