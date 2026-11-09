@@ -14,10 +14,10 @@
   currency: "R$",
   logo: none, // e.g. "logo.png" (path relative to this file)
   from: (
-    name: "Waywize Tecnologia Ltda",
-    id: "CNPJ 12.345.678/0001-90",
-    address: "Av. Paulista, 1000 — São Paulo, SP",
-    contact: "contato@waywize.com.br · (11) 3000-0000",
+    name: "Victor Lis Bronzo",
+    id: "Desenvolvedor de software",
+    address: "Atibaia, SP",
+    contact: "github.com/victor-lis-bronzo",
   ),
   to: (
     name: "Padaria Pão Dourado",
@@ -41,7 +41,7 @@
     [Prazo estimado: 10 semanas após a aprovação.],
     [Valores de suporte reajustados anualmente pelo IPCA.],
   ),
-  signer: (name: "Victor Lis", role: "Diretor de Projetos"),
+  signer: (name: "Victor Lis Bronzo", role: "Desenvolvedor de software"),
 )
 
 // ===== LAYOUT ==============================================================

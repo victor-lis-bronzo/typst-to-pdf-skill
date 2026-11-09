@@ -1,6 +1,6 @@
 # Examples
 
-Each file below is a template from `skills/typst-to-pdf/assets/` compiled with `typst compile` (Typst 0.13.1). Only the sample strings (company name, tax ID, signer) were swapped for neutral placeholders; layout and code are unchanged.
+Each file below is a template from `skills/typst-to-pdf/assets/` compiled with `typst compile` (Typst 0.13.1). The sample strings (company name, tax ID, signer) in these renders were swapped for neutral placeholders; layout and code are unchanged. The templates themselves ship with sample data about the author.
 
 | Template | PDF | Preview |
 |---|---|---|

@@ -18,11 +18,11 @@
   // A preset, (width, height), or override at compile time: --input preset=story
   size: presets.at(sys.inputs.at("preset", default: "social")),
   lang: "pt",
-  kicker: "Lançamento · Novembro 2026",
-  title: "Pedidos online em 10 minutos",
-  subtitle: "Catálogo, carrinho e retirada na loja, integrados ao seu PDV.",
-  cta: "waywize.com.br/pedidos",
-  brand: "Waywize",
+  kicker: "Portfólio · Novembro 2026",
+  title: "Skills de IA e projetos open source",
+  subtitle: "Skills para agentes, CLIs e aplicações publicadas no GitHub.",
+  cta: "github.com/victor-lis-bronzo",
+  brand: "Victor Lis Bronzo",
   logo: none,                  // e.g. "logo.png"
   from: rgb("#1e3a8a"),        // gradient start
   to: rgb("#7c3aed"),          // gradient end
